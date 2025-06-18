@@ -1,6 +1,8 @@
 import logo from "../assets/images/logo.svg";
 import sunIcon from "../assets/images/icon-sun.svg";
 
+import Button from "./Button.jsx";
+
 export default function Header() {
   return (
     <header className="pb-4">
@@ -35,6 +37,7 @@ export default function Header() {
           <h2 className="text-2xl text-white font-roboto font-bold">Extension List</h2>
           
           <div className="flex md:flex-row flex-wrap gap-2 sm:gap-4">
+            <Button>Test</Button>
             <a 
               href="#" 
               className="text-sm text-white font-roboto bg-slate-700 hover:bg-red-600 py-2 px-5 rounded-3xl transition-colors"
