@@ -5,6 +5,7 @@ import { data } from "./utilities/data.js";
 import Header from "./components/Header";
 import Section from "./components/Section";
 
+
 function App() {
   // const [data, setData] = useState(initialData);
   const [displayData, setDisplayData] = useState(data);
@@ -30,6 +31,7 @@ function App() {
       <main>
         <Header onFilter={handleFilterData} />
         <Section items={displayData}/>
+       
       </main>
     </>
   );

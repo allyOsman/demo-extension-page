@@ -1,6 +1,6 @@
+import Switch from "./Switch.jsx";
 
-export default function Card({ img, name, description, isActive}) {
-
+export default function Card({ img, name, description, isActive }) {
   // function handleCofirmRemoveItem(){
   //   if(
   //     window.confirm(`Are you sure you want to remove ${name}?`)
@@ -34,7 +34,8 @@ export default function Card({ img, name, description, isActive}) {
         <button className="p-1 px-2 border border-neutral-200 text-neutral-300 rounded-3xl hover:text-white hover:bg-red-600 text-sm font-medium transition-colors">
           Remove
         </button>
-        <p className="text-neutral-300 text-xs font-roboto opacity-80">{ isActive ? 'active': 'inactive'}</p>
+        {/* <p className="text-neutral-300 text-xs font-roboto opacity-80">{ isActive ? 'active': 'inactive'}</p> */}
+        <Switch isActive={isActive} />
       </div>
     </div>
   );
